@@ -82,9 +82,9 @@ const SideNav = ({active, setActive}:SideBarNav) => {
                             })}
                         </>}
                     </div>
-                    <div className="main-side-bar-list-cont" onClick={()=> {handleActive('reports'); setDropdownHolder('')}}>
+                    {/* <div className="main-side-bar-list-cont" onClick={()=> {handleActive('reports'); setDropdownHolder('')}}>
                         <span className={active == 'reports' ? "active-side-bar-list-item": "side-bar-list-item"}><BiSolidReport size={23} /> <p className="text-lg">Reports</p></span>
-                    </div>
+                    </div> */}
                     <div className="main-side-bar-list-cont" onClick={()=> {handleActive('settings'); setDropdownHolder('')}}>
                         <span className={active == 'settings' ? "active-side-bar-list-item": "side-bar-list-item"}><IoSettingsSharp size={23} /> <p className="text-lg">Settings</p>    </span>
                     </div>
