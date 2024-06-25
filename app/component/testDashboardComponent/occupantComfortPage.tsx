@@ -5,7 +5,7 @@ import TemperatureBarChart from './temperatureBarChart'
 import HumidityLineChart from './humidityLineChart'
 import ParticulateLineChart from './particulateLineChart'
 import LightingLevelsBarChart from './lightingLevelsBarChart'
-import NoiseLevelLineChart from './noiseLineChart'
+import NoiseLevelLineChart from './noiseLIneChart'
 
 const OccupantComfortPage = () => {
     return (
