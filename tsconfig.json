@@ -17,8 +17,10 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",  // Add this line
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "react-gauge-chart": ["./types/react-gauge-chart"]  // Add this line
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
