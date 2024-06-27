@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import React, { useRef, useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { Chart as ChartJS, LineElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, ChartOptions, ChartData, Chart } from "chart.js";
@@ -13,6 +13,8 @@ const verticalLinesPlugin = {
         const xScale = chart.scales.x;
         const yScale = chart.scales.y;
         const dataset = chart.data.datasets[0].data as number[];
+
+        if (!xScale || !yScale) return;
 
         ctx.save();
         ctx.strokeStyle = '#f1f5f9'; // Color of vertical lines
@@ -52,11 +54,11 @@ export const BuildingBehaviourLineChartOne: React.FC = () => {
     }, []);
 
     const data: ChartData<'line'> = {
-        labels: [100, 100, 100, 100,100, 100,100, 100,100, 105, 120, 140, 160, 180, 200,220,240,220,200,180,160,140,160,180,200, 220,240,260,280,300,280, 260,240,260,280,300,320,340, 360,380,400,420,440],
+        labels: Array.from({ length: 43 }, (_, i) => i + 1),
         datasets: [
             {
                 label: 'CO2 Levels Over Time',
-                data: [100, 100, 100, 100,100, 100,100, 100,100, 105, 120, 140, 160, 180, 200,220,240,220,200,180,160,140,160,180,200, 220,240,260,280,300,280, 260,240,260,280,300,320,340, 360,380,400,420,440 ],
+                data: [10,10,10,10,10,10,10,11,12,13,14,15,16,17,16,15,14,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,26,25,24,23,22,21,22,23,24,25,25],
                 backgroundColor: "rgba(241, 245, 249, 0.2)",
                 borderColor: "#f1f5f9", // Set border color to #f1f5f9
                 borderWidth: 1,
@@ -134,11 +136,11 @@ export const BuildingBehaviourLineChartTwo: React.FC = () => {
     }, []);
 
     const data: ChartData<'line'> = {
-        labels: [100, 100, 100, 100,100, 100,100, 100,100, 105, 120, 140, 160, 180, 200,220,240,220,200,180,160,140,160,180,200, 220,240,260,280,300,280, 260,240,260,280,300,320,340, 360,380,400,420,440],
+        labels: Array.from({ length: 43 }, (_, i) => i + 1),
         datasets: [
             {
                 label: 'CO2 Levels Over Time',
-                data: [100, 100, 100, 100,100, 100,100, 100,100, 105, 120, 140, 160, 180, 200,220,240,220,200,180,160,140,160,180,200, 220,240,260,280,300,280, 260,240,260,280,300,320,340, 360,380,400,420,440 ],
+                data: [10,11,12,13,14,15,15.2,15.4,15.6,15.8,16,16.2,16.4,16.6,16.8,17,17,17,17,17,16.9,16.8,16.7,16.6,16.5,16.4,16.3,16.4,16.5,16.6,16.7,16.9,17,19,21,23,25,27,29,31,33,35,37],
                 backgroundColor: "rgba(241, 245, 249, 0.2)",
                 borderColor: "#f1f5f9", // Set border color to #f1f5f9
                 borderWidth: 1,

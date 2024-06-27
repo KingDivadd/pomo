@@ -24,8 +24,8 @@ const BuildingPerformanceBarOne: React.FC = () => {
         };
     }, []);
 
-    const labels = Array.from({ length: 20 }, (_, i) => `Building ${String.fromCharCode(65 + i)}`);
-    const dataPoints = Array.from({ length: 20 }, () => Math.floor(Math.random() * 200));
+    const labels = Array.from({ length: 50 }, (_, i) => `Building ${String.fromCharCode(65 + i)}`);
+    const dataPoints = Array.from({ length: 50 }, () => Math.floor(Math.random() * 200));
 
     return (
         <div

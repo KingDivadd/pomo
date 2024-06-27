@@ -1,6 +1,9 @@
 import React from 'react'
+import Image from 'next/image'
+
 import {BuilddMoangcailiy, HirinaOpers, Nomiumes, Ooplounrnce, DciltHiopers, Yop, Vorslatility, Empty, End, Adaa,BarColumnOne, BarColumnTwo, BarColumnThree, BarColumnFour, BarColumnFive, BuildingPerformanceBottomLeftOne, BuildingPerformanceBottomLeftTwo, BuildingPerformanceBottomLeftThree, BuildingPerformanceBottomLeftFour, BuildingPerformanceCenterBottomLeftOne, CompanyOverOne, CompanyOverSix, CompanyOvernow, CompanyOverFive, CompanyOverFour, CompanyOverThree, CompanyOverTwo} from './helper'
 import  {BuildingBehaviourLineChartOne, BuildingBehaviourLineChartTwo} from './charts'
+
 import BuildingPerformanceBarOne from './barCharts'
 import { DoughnutChartThree } from '../donutChart'
 
@@ -46,8 +49,10 @@ const MainDashboardPage = () => {
                         </span>
                     </span> 
 
-                    <span className="w-[95%] flex-1 mx-auto ">
-                        <BuildingPerformanceBarOne />
+                    <span className="w-[95%]  flex-1 mx-auto pt-[10px]">
+                        <span className="w-full h-full flex flex items-center justify-start">
+                            <BuildingPerformanceBarOne />
+                        </span>
                     </span>
                     <div className="w-full h-[65px] bg-gray-400 flex flex-row items-center justify-center rounded-b-[5px] gap-4 py-[10px] px-[10px]">
                         <span className="w-full h-full flex flex-row items-center justif-start gap-2">
@@ -60,9 +65,17 @@ const MainDashboardPage = () => {
                     </div>
                 </div>
 
-                <div className="w-[46%] h-full flex flex-col items-start justify-between bg-gray-200 rounded-[5px] ">
-                    <div className="w-full flex-1 bg-gray-200 rounded-t-[5px]">
-                        {/* <DoughnutChartThree /> */}
+                <div className="w-[46%] h-full flex flex-col items-start justify-between  rounded-[5px] ">
+                    <div className="w-full flex-1  rounded-t-[5px]">
+                        {/* image wil be here */}
+                        <div className="relative w-full h-full rounded-[3px] overflow-hidden">
+                            <Image 
+                                src="/proj img.webp" 
+                                alt="Authentication" 
+                                layout="fill" 
+                                objectFit="cover" 
+                            />
+                        </div>
                     </div>
                     <div className="w-full h-[65px] bg-gray-400 flex flex-row items-center justify-center rounded-b-[5px] gap-4 py-[10px] px-[10px]">
                         <span className="w-full h-full flex flex-row items-center justify-between gap-2">
