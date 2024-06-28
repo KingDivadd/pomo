@@ -291,3 +291,8 @@ export const paymentSection = [
 ]
 
 // ----------------------------TEST FIELD----------------------------------
+
+export interface ShowSideBarProps {
+    showSideBar: boolean;
+    setShowSideBar: (showSideBar: boolean) => void;
+}

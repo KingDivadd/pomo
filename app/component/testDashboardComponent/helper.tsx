@@ -213,8 +213,8 @@ export const BarColumnFive = ()=>{
 export const BuildingPerformanceBottomLeftOne = ()=>{
 
     return (
-        <div className="w-[30%] h-full flex flex-col items-start justify-between">
-            <p className="text-[10px] text-white">Lorem, ipsum dolor.</p>
+        <div className="w-[30%] h-full flex flex-col items-start justify-center">
+            <p className="text-[10px] text-white">Lorem, ipsum dolor!</p>
             <p className="text-[11px] text-white">lorem</p>
             <p className="text-[10px] text-white">Lorem, ipsum dolor.</p>
         </div>
@@ -235,7 +235,7 @@ export const BuildingPerformanceBottomLeftTwo = ()=>{
 export const BuildingPerformanceBottomLeftThree = ()=>{
     
     return (
-        <div className="w-[30%] h-full flex flex-col items-start justify-between">
+        <div className="w-[30%] h-full flex flex-col items-start justify-center">
             <p className="text-[10px] text-white">Lorem, ipsum dolor.</p>
             <p className="text-[11px] text-white">lorem</p>
             <p className="text-[10px] text-white">Lorem, ipsum dolor.</p>
