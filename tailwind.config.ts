@@ -7,6 +7,9 @@ module.exports = {
   ],
   mode: "jit",
   theme: {
+    screen: {
+      xs: '480px'
+    },
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
